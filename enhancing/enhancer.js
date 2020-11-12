@@ -36,12 +36,12 @@ function get (item) {
   if (item.enhancement > 0) {
     return { ...item, name: `${item.name} +${item.enhancement} ` }
   }
-  return { ...item };
+  return { ...item }
 }
 
 module.exports = {
   success,
   fail,
   repair,
-  get,
-};
+  get
+}
